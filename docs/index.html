@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жасмін — квіткова крамниця</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-icon">&#10047;</span> Жасмін
+            </a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home" class="nav__link active">Головна</a></li>
+                <li><a href="#about" class="nav__link">Про нас</a></li>
+                <li><a href="#products" class="nav__link">Магазин</a></li>
+                <li><a href="#services" class="nav__link">Послуги</a></li>
+                <li><a href="#testimonials" class="nav__link">Відгуки</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Зв'язатися з нами</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__bg"></div>
+        <div class="container hero__content">
+            <p class="hero__subtitle">Ласкаво просимо до Жасмін</p>
+            <h1 class="hero__title">Красиві квіти<br>для будь-якої нагоди</h1>
+            <p class="hero__description">Ручні букети та композиції, створені з любов'ю. Свіжі квіти доставляються прямо до вашого дому, перетворюючи звичайні моменти на незабутні спогади.</p>
+            <div class="hero__actions">
+                <a href="#products" class="btn btn--primary">Переглянути колекцію</a>
+                <a href="#about" class="btn btn--outline">Наша історія</a>
+            </div>
+            <div class="hero__stats">
+                <div class="hero__stat">
+                    <span class="hero__stat-number">500+</span>
+                    <span class="hero__stat-label">Задоволені клієнти</span>
+                </div>
+                <div class="hero__stat">
+                    <span class="hero__stat-number">50+</span>
+                    <span class="hero__stat-label">Види квітів</span>
+                </div>
+                <div class="hero__stat">
+                    <span class="hero__stat-number">10+</span>
+                    <span class="hero__stat-label">Років досвіду</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__images">
+                    <div class="about__image about__image--main">
+                        <div class="about__image-placeholder">
+                            <span class="placeholder-icon">&#127803;</span>
+                            <p>Ремісничі композиції</p>
+                        </div>
+                    </div>
+                    <div class="about__image about__image--accent">
+                        <div class="about__image-placeholder">
+                            <span class="placeholder-icon">&#127804;</span>
+                            <p>Свіжі щодня</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__content">
+                    <span class="section__subtitle">Наша історія</span>
+                    <h2 class="section__title">Створюємо радість з кожним пелюстком</h2>
+                    <p class="about__text">У Жасмін ми віримо, що кожна квітка розповідає свою історію. Протягом більше десяти років ми відбираємо найкращі квіти від місцевих та міжнародних виробників, створюючи вражаючі композиції, які говорять мовою любові, вдячності та святкування.</p>
+                    <p class="about__text">Наша команда захоплених флористів поєднує традиційні техніки з сучасним дизайном, створюючи композиції, які так само унікальні, як і події, які вони відзначають.</p>
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <span class="about__feature-icon">&#127793;</span>
+                            <div>
+                                <h4>Сталий розвиток</h4>
+                                <p>Партнери з екологічного землеробства</p>
+                            </div>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">&#128666;</span>
+                            <div>
+                                <h4>Доставка в той же день</h4>
+                                <p>Замовляйте до 14:00 для доставки в той же день</p>
+                            </div>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">&#10084;&#65039;</span>
+                            <div>
+                                <h4>Зроблено з любов'ю</h4>
+                                <p>Кожна композиція виготовлена вручну</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section" id="products">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Наша колекція</span>
+                <h2 class="section__title">Найпопулярніші композиції</h2>
+                <p class="section__description">Відкрийте для себе наші найулюбленіші букети, ретельно створені для кожного моменту, вартий святкування.</p>
+            </div>
+            <div class="products__filters">
+                <button class="products__filter active" data-filter="all">Всі</button>
+                <button class="products__filter" data-filter="bouquets">Букети</button>
+                <button class="products__filter" data-filter="roses">Троянди</button>
+                <button class="products__filter" data-filter="seasonal">Сезонні</button>
+                <button class="products__filter" data-filter="wedding">Весільні</button>
+            </div>
+            <div class="products__grid">
+                <article class="product-card" data-category="bouquets">
+                    <div class="product-card__image">
+                        <div class="product-card__placeholder">&#127801;</div>
+                        <span class="product-card__badge">Бестселер</span>
+                        <div class="product-card__overlay">
+                            <button class="product-card__quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Букет сходу сонця</h3>
+                        <p class="product-card__desc">Теплі жовті, ніжні рожеві та м'які білі відтінки</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">$45.00</span>
+                            <button class="product-card__cart-btn" aria-label="Додати до кошика">+</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="roses">
+                    <div class="product-card__image">
+                        <div class="product-card__placeholder">&#127801;</div>
+                        <span class="product-card__badge product-card__badge--new">Новинка</span>
+                        <div class="product-card__overlay">
+                            <button class="product-card__quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Класичні червоні троянди</h3>
+                        <p class="product-card__desc">Дюжина преміальних червоних троянд з довгими стеблами</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">$65.00</span>
+                            <button class="product-card__cart-btn" aria-label="Додати до кошика">+</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="seasonal">
+                    <div class="product-card__image">
+                        <div class="product-card__placeholder">&#127803;</div>
+                        <div class="product-card__overlay">
+                            <button class="product-card__quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Весняний садовий мікс</h3>
+                        <p class="product-card__desc">Яскраві тюльпани, нарциси та гіацинти</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">$55.00</span>
+                            <button class="product-card__cart-btn" aria-label="Додати до кошика">+</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="bouquets">
+                    <div class="product-card__image">
+                        <div class="product-card__placeholder">&#127802;</div>
+                        <div class="product-card__overlay">
+                            <button class="product-card__quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Мрії про лаванду</h3>
+                        <p class="product-card__desc">Фіолетова лаванда, бузок та білі лілії</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">$50.00</span>
+                            <button class="product-card__cart-btn" aria-label="Додати до кошика">+</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="wedding">
+                    <div class="product-card__image">
+                        <div class="product-card__placeholder">&#128144;</div>
+                        <span class="product-card__badge">Популярне</span>
+                        <div class="product-card__overlay">
+                            <button class="product-card__quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Весільна елегантність</h3>
+                        <p class="product-card__desc">Білі півонії, троянди та гіпсофіла</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">$120.00</span>
+                            <button class="product-card__cart-btn" aria-label="Додати до кошика">+</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" data-category="roses">
+                    <div class="product-card__image">
+                        <div class="product-card__placeholder">&#127801;</div>
+                        <div class="product-card__overlay">
+                            <button class="product-card__quick-view">Швидкий перегляд</button>
+                        </div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Пастельний рожевий сад</h3>
+                        <p class="product-card__desc">М'які рожеві, персикові та кремові троянди</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">$58.00</span>
+                            <button class="product-card__cart-btn" aria-label="Додати до кошика">+</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="products__cta">
+                <a href="#" class="btn btn--primary">Переглянути всі продукти</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Що ми пропонуємо</span>
+                <h2 class="section__title">Наші послуги</h2>
+                <p class="section__description">Від інтимних жестів до грандіозних святкувань, ми робимо кожну подію квітучою.</p>
+            </div>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">&#127902;</div>
+                    <h3 class="service-card__title">Індивідуальні букети</h3>
+                    <p class="service-card__text">Розкажіть нам про своє бачення, і ми створимо унікальну композицію саме для вас.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">&#128141;</div>
+                    <h3 class="service-card__title">Весільні флористичні послуги</h3>
+                    <p class="service-card__text">Повні пакети весільних квітів — букети, центральні композиції та декор для місця проведення.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">&#128230;</div>
+                    <h3 class="service-card__title">Підписка на квіти</h3>
+                    <p class="service-card__text">Щотижневі або щомісячні доставки квітів, щоб ваш простір завжди був свіжим і яскравим.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">&#127979;</div>
+                    <h3 class="service-card__title">Корпоративні заходи</h3>
+                    <p class="service-card__text">Професійні флористичні композиції для офісів, заходів та корпоративних функцій.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner__bg"></div>
+        <div class="container banner__content">
+            <h2 class="banner__title">Зробіть день особливим для когось</h2>
+            <p class="banner__text">Замовте до 14:00 для доставки в той же день. Безкоштовна доставка для замовлень понад $75.</p>
+            <a href="#contact" class="btn btn--white">Замовити зараз</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Відгуки</span>
+                <h2 class="section__title">Що кажуть наші клієнти</h2>
+            </div>
+            <div class="testimonials__slider" id="testimonials-slider">
+                <div class="testimonials__track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-card__text">"Абсолютно приголомшливі композиції! Квіти були свіжими, а букет ще красивіший, ніж на фото. Обов'язково замовлю ще раз."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">S</div>
+                            <div>
+                                <h4 class="testimonial-card__name">Сара М.</h4>
+                                <p class="testimonial-card__role">Постійний клієнт</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-card__text">"Jasmine зробила наш весільний день чарівним. Флористичні композиції перевершили наші очікування. Кожен гість компліментував квіти!"</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">E</div>
+                            <div>
+                                <h4 class="testimonial-card__name">Емілі та Джеймс</h4>
+                                <p class="testimonial-card__role">Весільні клієнти</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-card__text">"Підписка на коробку з квітами - найкращий подарунок, який я коли-небудь робила собі. Свіжі квіти щотижня прикрашають мій офіс і піднімають настрій усім."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">D</div>
+                            <div>
+                                <h4 class="testimonial-card__name">Давид Л.</h4>
+                                <p class="testimonial-card__role">Член підписки</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__nav">
+                    <button class="testimonials__btn testimonials__btn--prev" aria-label="Previous">&larr;</button>
+                    <div class="testimonials__dots" id="testimonials-dots"></div>
+                    <button class="testimonials__btn testimonials__btn--next" aria-label="Next">&rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram / Gallery Section -->
+    <section class="gallery section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Слідкуйте за нами</span>
+                <h2 class="section__title">@jasmine.flowers</h2>
+            </div>
+            <div class="gallery__grid">
+                <div class="gallery__item"><div class="gallery__placeholder">&#127800;</div></div>
+                <div class="gallery__item"><div class="gallery__placeholder">&#127801;</div></div>
+                <div class="gallery__item"><div class="gallery__placeholder">&#127802;</div></div>
+                <div class="gallery__item"><div class="gallery__placeholder">&#127803;</div></div>
+                <div class="gallery__item"><div class="gallery__placeholder">&#127804;</div></div>
+                <div class="gallery__item"><div class="gallery__placeholder">&#128144;</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <span class="section__subtitle">Зв'яжіться з нами</span>
+                    <h2 class="section__title">Давайте створимо щось прекрасне</h2>
+                    <p class="contact__text">Маєте особливе прохання або питання? Ми будемо раді почути вас. Завітайте до нашого магазину або надішліть нам повідомлення.</p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">&#128205;</span>
+                            <div>
+                                <h4>Завітайте до нас</h4>
+                                <p>Луцьк, вул. Квіткова, 12</p>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">&#128222;</span>
+                            <div>
+                                <h4>Зателефонуйте нам</h4>
+                                <p>(+380) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">&#128231;</span>
+                            <div>
+                                <h4>Напишіть нам</h4>
+                                <p>hello@jasmineflowers.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">&#128336;</span>
+                            <div>
+                                <h4>Години роботи</h4>
+                                <p>Пн–Сб: 8:00 – 19:00<br>Нд: 9:00 – 17:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form">
+                    <div class="form__group">
+                        <input type="text" id="name" name="name" class="form__input" placeholder=" " required>
+                        <label for="name" class="form__label">Ваше ім'я</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" id="email" name="email" class="form__input" placeholder=" " required>
+                        <label for="email" class="form__label">Електронна пошта</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" id="phone" name="phone" class="form__input" placeholder=" ">
+                        <label for="phone" class="form__label">Телефон (необов'язково)</label>
+                    </div>
+                    <div class="form__group">
+                        <select id="subject" name="subject" class="form__input form__select" required>
+                            <option value="" disabled selected>Виберіть тему</option>
+                            <option value="custom-bouquet">Індивідуальний букет</option>
+                            <option value="wedding">Весільне запитання</option>
+                            <option value="subscription">Підписка</option>
+                            <option value="corporate">Корпоративна подія</option>
+                            <option value="other">Інше</option>
+                        </select>
+                        <label for="subject" class="form__label form__label--select">Тема</label>
+                    </div>
+                    <div class="form__group form__group--full">
+                        <textarea id="message" name="message" class="form__input form__textarea" placeholder=" " rows="4" required></textarea>
+                        <label for="message" class="form__label">Ваше повідомлення</label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Надіслати повідомлення</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo"><span class="nav__logo-icon">&#10047;</span> Жасмін</a>
+                    <p class="footer__tagline">Приносимо красу природи до вашого порогу з 2015 року.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+                        <a href="#" class="footer__social-link" aria-label="Pinterest">PI</a>
+                        <a href="#" class="footer__social-link" aria-label="TikTok">TK</a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4>Швидкі посилання</h4>
+                    <ul>
+                        <li><a href="#home">Головна</a></li>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#products">Магазин</a></li>
+                        <li><a href="#services">Послуги</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Послуги</h4>
+                    <ul>
+                        <li><a href="#">Індивідуальні букети</a></li>
+                        <li><a href="#">Весільні квіти</a></li>
+                        <li><a href="#">Підписки</a></li>
+                        <li><a href="#">Корпоративні події</a></li>
+                        <li><a href="#">Поради по догляду за квітами</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h4>Підписка на новини</h4>
+                    <p>Підпишіться на сезонні спеціальні пропозиції та натхнення для квітів.</p>
+                    <form class="footer__newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Ваш email" class="footer__newsletter-input" required>
+                        <button type="submit" class="footer__newsletter-btn">&#10148;</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Жасмін — квіткова крамниця. Всі права захищені.</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Умови обслуговування</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
